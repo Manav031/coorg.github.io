@@ -47,3 +47,9 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+const quickbtn = document.getElementById("quickbtn");
+quickbtn.addEventListener("click", () => {
+    const quickdiv = document.getElementById("quick");
+    quickdiv.classList.toggle("quick-btn-click");
+});
