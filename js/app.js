@@ -53,3 +53,15 @@ quickbtn.addEventListener("click", () => {
     const quickdiv = document.getElementById("quick");
     quickdiv.classList.toggle("quick-btn-click");
 });
+
+const sendmail = document.getElementById("sendmail");
+sendmail.addEventListener("click", () => {
+    const emailTo = "manavdarji1@gmail.com";
+    const emailCC = "";
+    const emailSub = document.getElementById("sub").value;
+    const emailBody = document.getElementById("msg").value;
+    const pnumber = document.getElementById("phonenumber").value;
+    const uname = document.getElementById("username").value;
+    const msg = "Name: " + uname + " " + "Phone Number: " + pnumber + " " + emailBody;
+    window.open('mailto:'+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+msg);
+});
