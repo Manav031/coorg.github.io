@@ -893,6 +893,7 @@ footer {
     color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .quick-btn-div {
@@ -906,6 +907,7 @@ footer {
     align-items: center;
     display: none;
     transition: all .1s ease;
+    z-index: 1000;
 }
 
 .quick-btn-div a {
